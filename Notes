@@ -1,0 +1,73 @@
+CSS Notes
+
+Although CSS is a different language than HTML, it's possible to write CSS code directly within HTML code using inline styles.
+you can add the style attribute directly to the opening tag. After you add the attribute, 
+you can set it equal to the CSS style(s) you'd like applied to that element.
+
+<p style="color: red; font-size: 20px;">I'm learning to code!</p>
+
+HTML allows you to write CSS code in its own dedicated section with the <style> element. CSS can be written between opening and closing <style> tags. 
+To use the <style> element, it must be placed inside of the <head> element.
+
+After adding a <style> tag in the head section, you can begin writing CSS code.
+
+<head>
+  <style>
+    p {
+      color: red;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+
+Developers avoid mixing code by storing HTML 
+and CSS code in separate files (HTML files contain only HTML code, and CSS files contain only CSS code).
+
+You can create a CSS file by using the .css file name extension, like so: style.css
+
+With a CSS file, you can write all the CSS code needed to style a 
+page without sacrificing the readability and maintainability of your HTML file.
+
+
+
+
+When HTML and CSS code are in separate files, the files must be linked.
+Otherwise, the HTML file won't be able to locate the CSS code, and the styling will not be applied.
+
+You can use the <link> element to link HTML and CSS files together. 
+The <link> element must be placed within the head of the HTML file. 
+It is a self-closing tag and requires the following three attributes:
+
+href — like the anchor element, the value of this attribute must be the address, or path, to the CSS file.
+
+type — this attribute describes the type of document that you are linking to (in this case, a CSS file).
+
+The value of this attribute should be set to text/css.
+
+rel — this attribute describes the relationship between the HTML file and the CSS file. 
+Because you are linking to a stylesheet, the value should be set to stylesheet.
+
+Specifying the path to the stylesheet using a URL is one way of linking a stylesheet.
+
+If the CSS file is stored in the same directory as your HTML file, then you can specify a relative path instead of a URL, like so:
+
+<link href="./style.css" type="text/css" rel="stylesheet">
+
+
+all paragraph elements will be selected using a CSS selector. 
+Note that the CSS selector matches the HTML tag for that element, but without the angle bracket
+
+p {
+
+}
+
+CSS is not limited to selecting elements by tag name. HTML elements can have more than just a tag name; they can also have attributes.
+One common attribute is the class attribute. It's also possible to select an element by its class attribute.
+
+To select an HTML element by its class using CSS, a period (.) must be prepended to the class's name.
+In the example above case, the class is brand, so the CSS selector for it is .brand.
+
+.brand {
+
+}
