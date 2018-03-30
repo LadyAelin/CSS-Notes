@@ -1,0 +1,60 @@
+Visual Rules Section of CSS
+
+To align text we can use the text-align property. 
+The text-align property will align text to the element that holds it, otherwise known as its parent.
+
+The text-align property can be set to one of the following three values:
+
+left — aligns text to the left hand side of its parent element, which in this case is the browser.
+center — centers text inside of its parent element.
+right — aligns text to the right hand side of its parent element.
+
+Foreground color is the color that an element appears in. 
+For example, when a heading is styled to appear green, the foreground color of the heading has been styled.
+
+Conversely, when a heading is styled so that its background appears yellow, the background color of the heading has been styled.
+
+color: this property styles an element's foreground color
+
+background-color: this property styles an element's background color
+
+h1 {
+  color: red;
+  background-color: blue;
+}
+
+Opacity is the measure of how transparent an element is. 
+It's measured from 0 to 1, with 1 representing 100%, or fully visible and opaque, and 0 representing 0%, or fully invisible.
+
+Opacity can be used to make elements fade into others for a nice overlay effect. 
+To adjust the opacity of an element, the syntax looks like this:
+
+.overlay {
+  opacity: 0.5;
+}
+
+CSS has the ability to change the background of an element. One option is to make the background of an element an image. 
+This is done through the CSS property background-image. Its syntax looks like this:
+
+.main-banner {
+  background-image: url("https://www.example.com/image.jpg");
+}
+
+Reviewwwwww
+
+CSS declarations are structured into property and value pairs.
+
+The font-family property defines the typeface of an element.
+
+font-size controls the size of text displayed.
+
+font-weight defines how thin or thick text is displayed.
+
+The text-align property places text in the left, right, or center of its parent container.
+
+Text can have two different color attributes: color and background-color. 
+color defines the color of the text, while background-color defines the color behind the text.
+
+CSS can make an element transparent with the opacity property.
+
+CSS can also set the background of an element to an image with the background-image property.
