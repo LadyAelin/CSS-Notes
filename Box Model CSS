@@ -1,0 +1,121 @@
+The box model comprises the set of properties which define parts of an element that take up space on a web page. 
+The model includes the content area's size (width and height) and the element's padding, border, and margin. The properties include:
+
+Width and height — specifies the width and height of the content area.
+Padding — specifies the amount of space between the content area and the border.
+Border — specifies the thickness and style of the border surrounding the content area and padding.
+Margin — specifies the amount of space between the border and the outside edge of the element.
+
+Pixels allow you to set the exact size of an element's box (width and height). When the width and height of an element are set in pixels, 
+it will be the same size on all devices — an element that fills a laptop screen will overflow a mobile screen.
+
+
+A border is a line that surrounds an element, like a frame around a painting. Borders can be set with a specific width, style, and color.
+
+width — The thickness of the border. A border's thickness can be set in pixels or with one of the following keywords: thin, medium,
+or thick.
+style — The design of the border. Web browsers can render any of 10 different styles. Some of these styles include: none, dotted, and solid.
+color — The color of the border. Web browsers can render colors using a few different formats, including 140 built-in color keywords.
+
+You can modify the corners of an element's border box with the border-radius property.
+
+Useful resource for css: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#Values
+
+You can create a border that is a perfect circle by setting the radius equal to the height of the box, or to 100%.
+
+The space between the contents of a box and the borders of a box is known as padding. 
+Padding is like the space between a picture and the frame surrounding it.
+In CSS, you can modify this space with the padding property.
+
+p.content-header {
+  border: 3px solid coral;
+  padding: 10px;
+}
+
+The padding property is often used to expand the background color and make content look less cramped.
+
+If you want to be more specific about the amount of padding on each side of a box's content, you can use the following properties:
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+Each property affects the padding on only one side of the box's content, giving you more flexibility in customization.
+
+Margin refers to the space directly outside of the box. The margin property is used to specify the size of this space.
+
+p {
+  border: 1px solid aquamarine;
+  margin: 20px;
+}
+
+The code in the example above will place 20 pixels of space on the outside of the paragraph's box on all four sides. 
+his means that other HTML elements on the page cannot come within 20 pixels of the paragraph's border.
+
+If you want to be even more specific about the amount of margin on each side of a box, you can use the following properties:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+Each property affects the margin on only one side of the box, providing more flexibility in customization.
+
+MY  NOTE: THE MARGIN IS ALWAYS BELOW THE BORDER SO THAT YOU CAN RUN THE CODE
+
+What if you don't want equal margins on all four sides of the box?
+
+A similar implementation of the margin property is used to specify exactly how much margin there should be on each side of the box in a single declaration.
+
+p {
+  margin: 6px 10px 5px 12px;
+}
+In the example above, the four values 6px 10px 5px 12px refer to the amount of margin around the box in a clockwise rotation.
+In order, it specifies the amount of margin on the top (6 pixels), right (10 pixels), bottom (5 pixels), and left (12 pixels) sides of the box.
+
+When using this implementation of the margin property, the margin value must be specified for all four sides of the box.
+
+Just like the padding shortcut, when you're certain that the top and bottom values for margin will equal each other,
+and that the left and right values for margin will also equal each other, you can use the following shortcut:
+
+p {
+  margin: 6px 12px;
+}
+The first value, 6px, sets a margin value for the top and bottom of the box.
+The second value, 12px, sets a margin value for the left and right sides of the box.
+
+Because a web page can be viewed through displays of differing screen size, 
+the content on the web page can suffer from those changes in size. 
+To avoid this problem, CSS offers two properties that can limit how narrow or how wide an element's box can be sized to.
+
+min-width — this property ensures a minimum width of an element's box.
+max-width — this property ensures a maximum width of an element's box.
+
+All major web browsers have a default stylesheet they use in the absence of an external stylesheet. 
+These default stylesheets are known as user agent stylesheets. 
+In this case, the term "user agent" is a technical term for the browser.
+
+Review Session:
+
+The box model comprises a set of properties used to create space around and between HTML elements.
+
+The height and width of a content area can be set in pixels or percentage.
+
+Borders surround the content area and padding of an element. 
+The color, style, and thickness of a border can be set with CSS properties.
+
+Padding is the space between the content area and the border. It can be set in pixels or percent.
+Margin is the amount of spacing outside of an element's border.
+
+Horizontal margins add, so the total space between the borders of adjacent elements 
+is equal to the sum of the right margin of one element and the left margin of the adjacent element.
+
+Vertical margins collapse, so the space between vertically adjacent elements is equal to the larger margin.
+
+margin: 0 auto horizontally centers an element inside of its parent content area, if it has a width.
+
+The overflow property can be set to display, hide, or scroll, and dictates how
+HTML will render content that overflows its parent's content area.
+
+The visibility property can hide or show elements.
