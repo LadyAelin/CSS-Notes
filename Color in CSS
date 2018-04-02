@@ -1,0 +1,67 @@
+Colors
+
+There are three different ways to describe
+
+Named colors — English words that describe colors, also called keyword colors
+
+RGB — numeric values that describe a mix of red, green, and blue
+
+HSL — numeric values that describe a mix of hue, saturation, and lightness
+
+Foreground: Foreground color is the color that an element appears in. 
+For example, when a heading is styled to appear green, the foreground color of the heading has been styled.
+
+Background: Conversely, when a heading is styled so that its background appears yellow, the background color of the heading has been styled
+
+color - this property styles an element's foreground color.
+
+background-color - this property styles an element's background color.
+
+Hexadecimal
+One syntax that we can use to specify colors is called hexadecimal. Colors specified using this system are called hex colors. 
+A hex color begins with a hash character (#) which is followed by three or six characters. 
+The characters represent values for red, blue and green.
+
+This has all of the hexas: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+
+Hue, Saturation and Lightness
+
+color: hsl(120, 60%, 70%);
+
+Hue is the first number. It refers to an angle on a color wheel. Red is 0 degrees, Green is 120 degrees, 
+Blue is 240 degrees, and then back to Red at 360. You can see an example of this color wheel here.
+
+Saturation refers to the intensity or purity of the color. If you imagine a line segment drawn from the center 
+of the color wheel to the perimeter, 
+the saturation is a point on that line segment.
+
+Lightness refers to how light or dark the color is. Halfway, or 50%, is normal lightness. 
+Imagine a sliding dimmer on a light switch that starts halfway. 
+
+
+
+REVIEWWWW
+
+There are four ways to represent color in CSS:
+
+Named colors — there are 147 named colors, which you can review here.
+
+Hexadecimal or hex colors
+
+Hexadecimal is a number system with has sixteen digits, 0 to 9 followed by "A" to "F".
+
+Hex values always begin with # and specify values of red, blue and green using hexademical numbers such as #23F41A.
+
+RGB
+
+RGB colors use the rgb() syntax with one value for red, one value for blue and one value for green.
+
+RGB values range from 0 to 255 and look like this: rgb(7, 210, 50).
+
+HSL
+
+HSL stands for hue (the color itself), saturation (the intensity of the color), and lightness (how light or dark a color is).
+
+Hue ranges from 0 to 360 and saturation and lightness are both represented as percentages like this: hsl(200, 20%, 50%).
+
+You can add opacity to color in RGB and HSL by adding a fourth value, a, which is represented as a percentage.
